@@ -1,0 +1,32 @@
+<svg id="_3" data-name="3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162" height="172" viewBox="0 0 162 172">
+    <defs>
+        <style>
+            .cls-1{fill:#584ca8;filter:url(#filter)}.cls-1,.cls-2,.cls-3{fill-rule:evenodd}.cls-2{fill:url(#linear-gradient);filter:url(#filter-2)}.cls-3{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke-dasharray:4 8;opacity:.37}
+        </style>
+        <filter id="filter" x="2592" y="2611" width="162" height="172" filterUnits="userSpaceOnUse">
+            <feOffset result="offset" dy="16" in="SourceAlpha"/>
+            <feGaussianBlur result="blur" stdDeviation="5.385"/>
+            <feFlood result="flood" flood-opacity=".51"/>
+            <feComposite result="composite" operator="in" in2="blur"/>
+            <feBlend result="blend" in="SourceGraphic"/>
+            <feImage preserveAspectRatio="none" x="2621.03" y="2624.5" width="103.66" height="113.06" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAzLjY2IiBoZWlnaHQ9IjExMy4wNiIgdmlld0JveD0iMCAwIDEwMy42NiAxMTMuMDYiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuMzU7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHkxPSI0LjciIHgyPSIxMDMuNjYiIHkyPSIxMDguMzYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjgiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMTAzLjY2IiBoZWlnaHQ9IjExMy4wNiIvPgo8L3N2Zz4K"/>
+            <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+            <feBlend result="blend-2" in2="blend"/>
+        </filter>
+        <linearGradient id="linear-gradient" x1="2682.86" y1="2729.56" x2="2682.86" y2="2616.5" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#7367f0"/>
+            <stop offset="1" stop-color="#ce9ffc"/>
+        </linearGradient>
+        <filter id="filter-2" x="2631.03" y="2616.5" width="103.66" height="113.06" filterUnits="userSpaceOnUse">
+            <feGaussianBlur result="blur" in="SourceAlpha"/>
+            <feFlood result="flood" flood-color="#fff" flood-opacity=".32"/>
+            <feComposite result="composite" operator="out" in2="blur"/>
+            <feOffset result="offset" dx="-.707" dy=".707"/>
+            <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+            <feBlend result="blend" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path id="Эллипс_566_копия_6" data-name="Эллипс 566 копия 6" class="cls-1" d="M2719.13 2715.94l-26.79 19.19c-4.52 3.24-10.91 3.24-16.76 0l-34.66-19.19a23.9 23.9 0 0 1-11.6-15.71l-7.88-38.4c-1.33-6.47.64-12.46 5.16-15.7l26.79-19.2c4.52-3.23 10.91-3.23 16.75 0l34.67 19.2a23.907 23.907 0 0 1 11.6 15.7l7.87 38.4c1.33 6.48-.63 12.47-5.15 15.71z" transform="translate(-2592 -2611)"/>
+    <path id="Эллипс_566_копия" data-name="Эллипс 566 копия" class="cls-2" d="M2729.13 2707.94l-26.79 19.19c-4.52 3.24-10.91 3.24-16.76 0l-34.66-19.19a23.9 23.9 0 0 1-11.6-15.71l-7.88-38.4c-1.33-6.47.64-12.46 5.16-15.7l26.79-19.2c4.52-3.23 10.91-3.23 16.75 0l34.67 19.2a23.907 23.907 0 0 1 11.6 15.7l7.87 38.4c1.33 6.48-.63 12.47-5.15 15.71z" transform="translate(-2592 -2611)"/>
+    <path id="Эллипс_601_копия" data-name="Эллипс 601 копия" class="cls-3" d="M2713.7 2696.59l-18.09 12.96c-3.05 2.18-7.36 2.18-11.31 0l-23.4-12.96a16.132 16.132 0 0 1-7.82-10.6l-5.32-25.92c-.9-4.37.43-8.41 3.48-10.6l18.08-12.96c3.05-2.18 7.36-2.18 11.31 0l23.4 12.96a16.146 16.146 0 0 1 7.83 10.6l5.32 25.92c.89 4.37-.43 8.41-3.48 10.6z" transform="translate(-2592 -2611)"/>
+</svg>

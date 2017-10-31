@@ -1,0 +1,264 @@
+.how
+	position: relative
+	background-color: #fff
+	background-image: linear-gradient(to right, #f1ca74, #a64db6)
+	background-size: 100% 50%
+	background-repeat: no-repeat
+	+r(991)
+		background-color: #2E294E
+		background-image: url(../img/flowers.png) !important
+		background-repeat: no-repeat
+		background-position: center bottom
+	&__button
+		display: block
+		border: 1px solid rgb(255, 255, 255)
+		width: 227px
+		height: 54px
+		font-size: 20px
+		color: #fff
+		font-family: $GothamProMedium
+		text-align: center
+		margin: 0 auto 20px
+		padding-top: 10px
+		border-radius: 25px
+		position: relative
+		z-index: 10
+		transition: all 0.3s ease
+		background-color: #2E294E
+		+r(991)
+			margin: 30px auto
+		+r(480)
+			margin: 40px auto 20px
+	&__wrap
+		max-height: 750px
+		margin-top: 40px
+		height: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: -3px
+		position: relative
+		z-index: 9!important
+		padding-top: 150px
+		+r(1600)
+			background-position: -100px
+		+r(1400)
+			background-position: -180px
+		+r(1140)
+			max-height: 600px
+			padding-left: 60px
+			overflow: hidden
+			background-position: -140px
+		+r(991)
+			height: auto
+			max-height: 700px
+			min-height: 500px
+			overflow: visible
+			padding: 0
+			margin: 70px 0 50px!important
+			background-image: none!important
+			&::after
+				display: none
+		+r(560)
+			min-height: 400px
+		&::after
+			position: absolute
+			content: ''
+			right: 10%
+			bottom: 100px
+			max-height: 564px
+			height: 100%
+			width: 100%
+			max-width: 835px
+			background-image: url(../img/flowers.png)
+			+r(1140)
+				bottom: 40px
+				right: 0
+				max-height: 90%
+		.icon-text
+			position: absolute
+			left: 280px
+			top: -22px
+			font-size: 82px
+			z-index: 5
+			+r(1600)
+				left: 165px
+			+r(1400)
+				font-size: 75px
+				fill: #fff
+				left: 105px
+				top: 35px
+			+r(1140)
+				font-size: 61px
+				left: 100px
+			+r(991)
+				display: none
+	&__title
+		font-size: 40px
+		color: #fff
+		text-align: center
+		font-family: $GothamProMedium
+		margin: 0 0 50px
+		display: none
+		+r(991)
+			display: block
+	&__stepper
+		width: 100%
+		height: 350px
+		margin-top: 30px
+		background-repeat: no-repeat
+		background-size: 80% 70%
+		background-position: center
+		position: relative
+		+r(1400)
+			max-width: 700px
+		+r(991)
+			margin: 90px auto 0
+			max-width: 540px
+			background-size: 80% 75%
+			background-position: 30px center
+			height: 220px
+		+r(560)
+			height: 190px
+			max-width: 450px
+			background-size: 79% 72%
+		+r(480)
+			padding-top: 20px
+			max-width: 290px
+			height: 140px
+			background-size: 80% 60%
+			background-position: 20px 45px
+		.inf_ico
+			position: absolute
+			top: -30px
+			left: 99px
+			width: 43px
+			height: 46px
+			background-size: contain
+			background-repeat: no-repeat
+			transition: all 0.2s ease
+			+r(560)
+				left: 60px
+			+r(480)
+				left: -5px
+		.inf_ico.active
+			transform: rotate(-135deg)
+			+r(480)
+				transform: rotate(-180deg)
+	&__numbers
+		li
+			display: inline-block
+			width: 162px
+			height: 172px
+			position: relative
+			margin-right: 95px
+			z-index: 9
+			cursor: pointer
+			background-size: contain
+			border-radius: 50%
+			transition: all 0.2s ease
+			+r(1400)
+				margin-right: 10px
+			+r(991)
+				width: 122px
+				height: 122px
+			+r(560)
+				width: 90px
+				height: 92px
+				margin-right: 25px
+			+r(480)
+				width: 62px
+				height: 66px
+				margin-right: 5px
+			&:hover
+				transform: scale(1.15) translateY(10px)
+				+r(480)
+					transform: scale(1.08) translateY(7px)
+			&:nth-child(4),&:last-child
+				margin-right: 0
+			&:nth-child(5)
+				margin-left: 170px
+				+r(1400)
+					margin-left: 120px
+				+r(991)
+					margin-left: 74px
+				+r(560)
+					margin-left: 60px
+				+r(480)
+					margin-left: 45px
+			span
+				transition: all 0.3s ease
+				position: absolute
+				text-align: center
+				width: 100%
+				display: block
+				font-family: $GothamProBold
+				font-size: 37px
+				color: #fff
+				top: 35px
+				padding-left: 15px
+				text-shadow: -2px 2px 1px rgba(0,0,0,0.3)
+				+r(991)
+					font-size: 28px
+					top: 24px
+					padding-left: 5px
+				+r(560)
+					font-size: 20px
+					top: 18px
+				+r(480)
+					top: 10px
+					padding-left: 8px
+					font-size: 18px
+	&__descriptions
+		position: absolute
+		left: 120px
+		top: -90px
+		width: 100%
+		max-width: 400px
+		min-height: 80px
+		display: inline-block
+		+r(560)
+			top: -94px
+			left: 80px
+		+r(480)
+			left: 0
+	&__descriptions-list
+		position: relative
+		width: 100%
+		min-height: 70px
+		li.num_6
+			top: -40px
+		li
+			position: absolute
+			display: block
+			width: 100%
+			left: 0
+			top: 0
+			padding: 20px
+			font-size: 16px
+			font-family: $GothamProRegular
+			color: #fff
+			border-radius: 16px
+			opacity: 0
+			transition: all 0.2s ease
+			transform: translateX(50px)
+			background-image: linear-gradient(to right, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%)
+			+r(480)
+				padding: 10px
+		li.active
+			opacity: 1
+			transform: translate(0)
+			display: block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
