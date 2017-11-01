@@ -4,7 +4,6 @@ import fullpage from 'fullpage.js';
 import '../../node_modules/jquery-countdown/dist/jquery.countdown.min';
 import '../../node_modules/svgxuse/svgxuse.min';
 import '../../node_modules/magnific-popup/dist/jquery.magnific-popup';
-import '../../node_modules/lightslider/dist/js/lightslider.min';
 import '../../node_modules/jquery-mask-plugin/dist/jquery.mask.min';
 
 let timelimeMod;
@@ -16,7 +15,7 @@ $(document).ready(() => {
         $(el).addClass('return_elem');
       }, 100 * i);
     });
-  }
+  };
 
   const scene = document.getElementById('parallax_scene');
   const parallaxInstance = new Parallax(scene);
@@ -30,7 +29,7 @@ $(document).ready(() => {
     verticalCentered: true,
     navigation: true,
     navigationPosition: 'right',
-    menu: '#m_menu',
+    menu: '.js_mobile_menu',
     anchors: ['main', 'about', 'problems', 'how', 'get', 'action', 'gmap', 'contacts'],
     navigationTooltips: ['Главная', 'Кто мы', 'Проблемы и решения', 'Как это происходит', 'Что Вы получите', 'Время ограничено', 'Как добраться', 'Контакты'],
     showActiveTooltip: true,
@@ -38,9 +37,9 @@ $(document).ready(() => {
     slidesNavPosition: 'bottom',
     controlArrows: false,
     scrollingSpeed: 500,
-    touchSensitivity: 16,
+    touchSensitivity: 15,
     recordHistory: false,
-    normalScrollElements: '.timeline,.mfp-content,.mod_main,.mfp-wrap',
+    //normalScrollElements: '.timeline',
     fixedElements: '.js_move_to,.open_mob_menu',
     afterRender() {
       $('.js_timer').countdown('2017/11/04 00:00:00', (event) => {
@@ -49,15 +48,17 @@ $(document).ready(() => {
         $('.cou_sec').html(event.strftime('%M'));
       });
       function timerFunc() {
-        $.magnificPopup.open({ items: { src: '.timeline' },
-          type: 'inline',
-          fixedContentPos: true,
-          closeBtnInside: false,
-          showCloseBtn: false,
-          fixedBgPos: true,
-          preloader: false,
-          midClick: true,
-          mainClass: 'my-mfp-zoom-in',
+        $.magnificPopup.open({
+          items: { src: '.timeline' },
+            type: 'inline',
+            closeOnBgClick: true,
+            overflowY: 'auto',
+            preloader: false,
+            removalDelay: 300,
+            showCloseBtn: false,
+            fixedContentPos: true,
+            fixedBgPos: true,
+            mainClass: 'my-mfp-zoom-in',
           callbacks: {
             afterClose() {
               timelimeMod = setTimeout(timerFunc, 60000);
@@ -67,7 +68,7 @@ $(document).ready(() => {
       }
       $('.js_popup').magnificPopup({
         type: 'inline',
-        closeOnBgClick: false,
+        closeOnBgClick: true,
         overflowY: 'auto',
         preloader: false,
         removalDelay: 300,
@@ -187,26 +188,6 @@ $(document).ready(() => {
     const tab_id = $(this).attr('data-input');
     $(`.${tab_id}`).removeClass('move_label');
   });
-
-  const mySlider = $('.js_how_slider').lightSlider({
-    auto: true,
-    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-    speed: 600,
-    pause: 4000,
-    adaptiveHeight: true,
-    item: 1,
-    slideMargin: 0,
-    loop: true,
-    controls: false,
-    pager: false
-  });
-
-  /* START go to slide on hover */
-  $('.js_num').click(function() {
-    const slideNum = $(this).attr('data-slide');
-    mySlider.goToSlide(+slideNum);
-  });
-    /* END go to slide on hover */
 
     /* START FOR ACTION SEND */
   $('.js_form').submit(function() { // Change

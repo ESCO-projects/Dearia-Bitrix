@@ -6,9 +6,11 @@
 	background-repeat: no-repeat
 	+r(991)
 		background-color: #2E294E
-		background-image: url(../img/flowers.png) !important
+		background-image: url(../img/flowers.png)
 		background-repeat: no-repeat
 		background-position: center bottom
+	+r(480)
+		background-image: none!important
 	&__button
 		display: block
 		border: 1px solid rgb(255, 255, 255)
@@ -18,7 +20,7 @@
 		color: #fff
 		font-family: $GothamProMedium
 		text-align: center
-		margin: 0 auto 20px
+		margin: 0 auto
 		padding-top: 10px
 		border-radius: 25px
 		position: relative
@@ -30,66 +32,71 @@
 		+r(480)
 			margin: 40px auto 20px
 	&__wrap
-		max-height: 750px
+		max-height: 600px
 		margin-top: 40px
 		height: 100%
 		background-size: cover
 		background-repeat: no-repeat
-		background-position: -3px
+		background-position: -3px center
 		position: relative
 		z-index: 9!important
 		padding-top: 150px
+		&::after
+			position: absolute
+			content: ''
+			right: 0
+			bottom: 0
+			max-height: 564px
+			height: 100%
+			width: 100%
+			z-index: -1
+			background-position: right bottom
+			background-repeat: no-repeat
+			background-image: url(../img/flowers.png)
 		+r(1600)
-			background-position: -100px
+			background-position: -100px center
+			padding-right: 80px
 		+r(1400)
-			background-position: -180px
+			margin-top: 30px
+			background-position: -180px center
 		+r(1140)
-			max-height: 600px
-			padding-left: 60px
-			overflow: hidden
+			padding-right: 30px
 			background-position: -140px
 		+r(991)
+			padding: 0
 			height: auto
 			max-height: 700px
 			min-height: 500px
 			overflow: visible
-			padding: 0
 			margin: 70px 0 50px!important
 			background-image: none!important
 			&::after
 				display: none
 		+r(560)
 			min-height: 400px
-		&::after
-			position: absolute
-			content: ''
-			right: 10%
-			bottom: 100px
-			max-height: 564px
-			height: 100%
-			width: 100%
-			max-width: 835px
-			background-image: url(../img/flowers.png)
 			+r(1140)
 				bottom: 40px
 				right: 0
 				max-height: 90%
 		.icon-text
 			position: absolute
-			left: 280px
-			top: -22px
+			left: 170px
+			top: -40px
 			font-size: 82px
 			z-index: 5
 			+r(1600)
-				left: 165px
+				left: 75px
+				top: -38px
 			+r(1400)
-				font-size: 75px
-				fill: #fff
-				left: 105px
-				top: 35px
+				font-size: 70px
+				fill: #000
+				left: 25px
+				top: -25px
 			+r(1140)
-				font-size: 61px
-				left: 100px
+				top: 28px
+				fill: #fff
+				font-size: 62px
+				left: 75px
 			+r(991)
 				display: none
 	&__title
@@ -110,7 +117,11 @@
 		background-position: center
 		position: relative
 		+r(1400)
+			margin: 30px auto 0
 			max-width: 700px
+		+r(1140)
+			height: 330px
+			margin: 40px auto 0
 		+r(991)
 			margin: 90px auto 0
 			max-width: 540px
@@ -226,8 +237,9 @@
 		width: 100%
 		min-height: 70px
 		li.num_6
-			top: -40px
+			top: -35px
 		li
+			z-index: 3
 			position: absolute
 			display: block
 			width: 100%

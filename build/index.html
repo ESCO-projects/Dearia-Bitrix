@@ -88,7 +88,7 @@
       }
 
     </style>
-    <link rel="stylesheet" media="all" href="css/app.css?ver=3">
+    <link rel="stylesheet" media="all" href="css/app.css?ver=4">
     <meta name="description" content="DeAria - центр эстетической медицины и аппаратной косметологии. Более 100 видов косметологических услуг. Запишись!">
     <!-- Open Graph data -->
     <meta property="og:title" content="DeAria - центр аппаратной косметологии в Израиле.">
@@ -217,57 +217,20 @@
     </div>
     <!-- Preloader end -->
     <!-- BEGIN content -->
-    <div class="mod mod_main mfp-hide zoom-anim-dialog">
-      <div class="mod__content">
-        <div class="mod__form">
-          <div class="mod__title"> <span>Записаться <br>
-        на</span> <span>бесплатное</span> <br> <span>посещение салона</span> </div>
-          <form class="mod__fields js_form"> <input type="hidden" name="DATA[TITLE]" value="Лендинг DeAria главная форма"> <input type="hidden" name="DATA[SOURCE_ID]" value="WEB"> <input type="hidden" name="DATA[WEB_OTHER]" value="DeAria"> <input class="form_id" type="hidden" name="DATA[SOURCE_DESCRIPTION]">            <label class="name_user">
-          <span>Ваше имя</span>
-          <input class="js_input" name="DATA[NAME]" data-input="name_user"  type="text" required autocomplete="off">
-        </label> <label class="tel_num">
-          <span>Ваш номер телефона</span>
-          <input class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel" required autocomplete="off">
-        </label> <button class="form_button" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka8', 'event_action': 'Najatie8', });">Отправить</button> </form>
+    <div class="open_mob_menu">
+      <div class="mob_head">
+        <div class="mob_head__logo"><a href="http://dearia.co.il"><img src="img/logo_mobile.svg"></a></div>
+        <div class="mob_head__title">
+          <h1>Салон аппаратной <br>косметологии</h1>
         </div>
-        <div class="mod__image"> <img src="img/modal_girl.png" alt="girl"> </div>
-        <div class="mod__closer js_close_mod">
-          <div class="mod__closer--lines"></div>
-        </div>
+        <div class="mob_head__button"> <a class="js_value call_you js_popup" data-form="Фиксированное меню -Бесплатный звонок-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka10', 'event_action': 'Najatie10', });">Бесплатный<br>звонок</a> </div>
+      </div>
+      <div class="menu_lines js_toggle_menu">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
-    <section class="timeline mfp-hide zoom-anim-dialog">
-      <div class="timeline__wrap">
-        <div class="timeline__closer">
-          <div class="timeline__closer-btn js_close_popup"></div>
-        </div>
-        <div class="timeline__title">
-          <h3>Мы ничего не продаем</h3>
-          <p> Вся информация на сайте, описывает разовое<br> <span>бесплатное</span> посещение нашего салона. </p>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="timeline__descr">
-                <p> Вам не понадобиться ни за что платить.<br> Это мероприятие организовано в рамках PR акции салона. </p>
-                <p class="js_focus_input"> Заполните форму, и наш <br> менеджер <span>свяжется с Вами</span> </p>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="timeline__form">
-                <form class="mod__fields js_form"> <input type="hidden" name="DATA[TITLE]" value="Лендинг DeAria"> <input type="hidden" name="DATA[SOURCE_ID]" value="WEB"> <input type="hidden" name="DATA[SOURCE_DESCRIPTION]" value="Таймлайн форма"> <label class="name_user">
-                <span>Ваше имя</span>
-                <input class="js_input js_focus" name="DATA[NAME]" data-input="name_user"  type="text" required autocomplete="off">
-              </label> <label class="tel_num">
-                <span>Ваш номер телефона</span>
-                <input class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel" required autocomplete="off">
-              </label> <button class="form_button" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka9', 'event_action': 'Najatie9', });">Отправить</button> </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <div class="mob_menu_wrap js_mobile_menu">
       <ul class="mob_mnu" id="m_menu">
         <li data-menuanchor="main" class="active js_toggle_menu"> <a href="#main">Главная</a> </li>
@@ -280,22 +243,8 @@
         <li data-menuanchor="contacts" class="js_toggle_menu"> <a href="#contacts">Контакты</a> </li>
       </ul>
     </div>
-    <div class="open_mob_menu">
-      <div class="mob_head">
-        <div class="mob_head__logo"><a href="#"><img src="img/logo_mobile.svg" alt="DeAria"></a></div>
-        <div class="mob_head__title">
-          <h1>Салон аппаратной <br>косметологии</h1>
-        </div>
-        <div class="mob_head__button"> <a class="js_value call_you js_popup" data-form="Фиксированное меню -Бесплатный звонок-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka10', 'event_action': 'Najatie10', });">Бесплатный<br>звонок</a> </div>
-      </div>
-      <div class="menu_lines js_toggle_menu">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
     <div class="wrapper">
-      <header class="head section" style="background-image: url(img/header.jpg);">
+      <header class="head section">
         <div class="head__wrap">
           <div class="container">
             <!--start top of head-->
@@ -304,7 +253,7 @@
                 <div class="col-sm-7 col-xs-12">
                   <div class="head__logo">
                     <div class="head__icon"> <a href="http://dearia.co.il">
-              
+
 <svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
 
               </a> </div>
@@ -333,9 +282,9 @@
           </div>
           <div class="parallax_container">
             <div id="parallax_scene">
-              <div data-depth="0.4"><img src="img/lep1.png" alt=""></div>
-              <div data-depth="0.9"><img src="img/lep2.png" alt=""></div>
-              <div data-depth="1.2"><img src="img/lep3.png" alt=""></div>
+              <div data-depth="1"><img src="img/lep1.png"></div>
+              <div data-depth="1.5"><img src="img/lep2.png"></div>
+              <div data-depth="2.5"><img src="img/lep3.png"></div>
             </div>
           </div>
         </div>
@@ -506,7 +455,7 @@
           </div>
         </div>
       </section>
-      <section class="get section" style="background-image: url(img/gril_sect_bg.jpg);">
+      <section class="get section">
         <div class="get__wrap">
           <div class="container">
             <div class="get__top"> <svg class="icon icon-gift"><use xlink:href="img/sprite.svg#icon-gift"></use></svg>
@@ -666,7 +615,7 @@
       </section>
       <section class="footer section fp-auto-height">
         <div class="footer__wrap">
-          <div class="footer__contacts"> <a href="mailto:info@dearia.co.il">info@dearia.co.il 
+          <div class="footer__contacts"> <a href="mailto:info@dearia.co.il">info@dearia.co.il
 <svg class="icon icon-mail"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
 </a> <a href="tel:0722798193">
 <svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
@@ -676,7 +625,7 @@
             <div class="footer__logo"><a href="http://dearia.co.il">
 <svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
 </a></div>
-            <div class="footer__call-back"> <a class="footer_callback js_popup js_value" data-form="Блок -Контакты-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka7', 'event_action': 'Najatie7', });">Обратная связь 
+            <div class="footer__call-back"> <a class="footer_callback js_popup js_value" data-form="Блок -Контакты-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka7', 'event_action': 'Najatie7', });">Обратная связь
 <svg class="icon icon-footer_arr"><use xlink:href="img/sprite.svg#icon-footer_arr"></use></svg>
 </a> </div>
             <div class="footer__socials"> <a href="#">
@@ -695,11 +644,62 @@
           </div>
         </div>
       </section>
+      <div class="mod mod_main mfp-hide zoom-anim-dialog">
+        <div class="mod__content">
+          <div class="mod__form">
+            <div class="mod__title"> <span>Записаться <br>
+        на</span> <span>бесплатное</span> <br> <span>посещение салона</span> </div>
+            <form class="mod__fields js_form"> <input type="hidden" name="DATA[TITLE]" value="Лендинг DeAria главная форма"> <input type="hidden" name="DATA[SOURCE_ID]" value="WEB"> <input type="hidden" name="DATA[WEB_OTHER]" value="DeAria"> <input class="form_id" type="hidden" name="DATA[SOURCE_DESCRIPTION]">              <label class="name_user">
+          <span>Ваше имя</span>
+          <input class="js_input" name="DATA[NAME]" data-input="name_user"  type="text" required autocomplete="off">
+        </label> <label class="tel_num">
+          <span>Ваш номер телефона</span>
+          <input class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel" required autocomplete="off">
+        </label> <button class="form_button" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka8', 'event_action': 'Najatie8', });">Отправить</button> </form>
+          </div>
+          <div class="mod__image"> <img src="img/modal_girl.png" alt="girl"> </div>
+          <div class="mod__closer js_close_mod">
+            <div class="mod__closer--lines"></div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline mfp-hide zoom-anim-dialog">
+        <div class="timeline__wrap">
+          <div class="timeline__closer">
+            <div class="timeline__closer-btn js_close_popup"></div>
+          </div>
+          <div class="timeline__title">
+            <h3>Мы ничего не продаем</h3>
+            <p> Вся информация на сайте, описывает разовое<br> <span>бесплатное</span> посещение нашего салона. </p>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="timeline__descr">
+                  <p> Вам не понадобиться ни за что платить.<br> Это мероприятие организовано в рамках PR акции салона. </p>
+                  <p class="js_focus_input"> Заполните форму, и наш <br> менеджер <span>свяжется с Вами</span> </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="timeline__form">
+                  <form class="mod__fields js_form"> <input type="hidden" name="DATA[TITLE]" value="Лендинг DeAria"> <input type="hidden" name="DATA[SOURCE_ID]" value="WEB"> <input type="hidden" name="DATA[SOURCE_DESCRIPTION]" value="Таймлайн форма"> <label class="name_user">
+                <span>Ваше имя</span>
+                <input class="js_input js_focus" name="DATA[NAME]" data-input="name_user"  type="text" required autocomplete="off">
+              </label> <label class="tel_num">
+                <span>Ваш номер телефона</span>
+                <input class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel" required autocomplete="off">
+              </label> <button class="form_button" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka9', 'event_action': 'Najatie9', });">Отправить</button> </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
-    <script type="text/javascript" src="lib/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="js/app.js?ver=3"></script>
+    <script type="text/javascript" src="libs/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/app.js?ver=4"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzUP0XTLNn4vaYPc1dpKIWu3Im7HfTXnI&libraries=places&language=ru&region=RU&callback=initMap"></script>
     <!-- END scripts -->
     <!-- BEGIN remarketing -->

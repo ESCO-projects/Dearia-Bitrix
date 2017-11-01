@@ -1,13 +1,15 @@
 .head
+	background-image: url(../img/header.jpg)
 	box-shadow: inset 0 60px 100px -20px rgba(0,0,0,0.25)
 	background-color: #FACFD8
-	+cover
+	background-size: cover
 	background-position: top center
 	position: relative
 	+r(580)
 		background-position: 60%
-	+r(420)
-		background-position: 65%
+	+r(480)
+		background-position: right top
+		background-image: url(../img/header_mobile.jpg)
 	&__wrap
 		height: 100%
 		min-height: 600px

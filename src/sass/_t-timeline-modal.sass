@@ -1,15 +1,11 @@
 .timeline
 	color: #fff
-	+r(767)
-		overflow-y: auto
-		-webkit-overflow-scrolling: touch
+	width: 100%
+	margin: 0 auto
 	&__wrap
 		margin: 60px 0
-		+r(767)
-			overflow-y: auto
-			-webkit-overflow-scrolling: touch
 		+r(480)
-			margin: 50px 0
+			margin: 54px 0
 	&__title
 		background-image: linear-gradient(to right, rgba(247,97,161,0) 0%, rgb(247,97,161) 50%, rgba(247,97,161,0) 100%)
 		min-height: 122px
@@ -49,6 +45,10 @@
 		+r(991)
 			p
 				text-align: center
+		+rh(535)
+			p
+				&:first-child
+					display: none
 		p
 			font-family: $GothamProLight
 			font-size: 18px
