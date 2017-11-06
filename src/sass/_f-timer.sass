@@ -1,3 +1,6 @@
+.timer.msbrowser
+	&::before,&::after
+		display: none
 .timer
 	background: rgb(95, 6, 108) linear-gradient(135deg, rgb(95, 6, 108) 0%, rgb(46, 41, 78) 100%)
 	position: relative
@@ -37,6 +40,9 @@
 			font-size: 21px
 		span
 			font-family: $GothamProLight
+	.timer__wrap.msbrowser
+		&::before,&::after
+			display: none
 	&__wrap
 		position: relative
 		z-index: 3
