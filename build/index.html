@@ -88,7 +88,7 @@
       }
 
     </style>
-    <link rel="stylesheet" media="all" href="css/app.css?ver=5">
+    <link rel="stylesheet" media="all" href="css/app.css?ver=7">
     <meta name="description" content="DeAria - центр эстетической медицины и аппаратной косметологии. Более 100 видов косметологических услуг. Запишись!">
     <!-- Open Graph data -->
     <meta property="og:title" content="DeAria - центр аппаратной косметологии в Израиле.">
@@ -195,8 +195,7 @@
       fbq('init', '518235855207742'); // Insert your pixel ID here.
       fbq('track', 'PageView');
 
-    </script> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=518235855207742&ev=PageView&noscript=1"
-    /></noscript>
+    </script> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=518235855207742&ev=PageView&noscript=1"/></noscript>
     <!-- DO NOT MODIFY -->
     <!-- End Facebook Pixel Code -->
   </head>
@@ -644,7 +643,7 @@
           </div>
           <div class="footer__copy">
             <p> &#169; 2017 <span>Dearia.</span> </p>
-            <p><a target="_blank" href="confidentiality.pdf">Политика конфиденциальности</a></p>
+            <p class="footer__cofident"><a target="_blank" href="confidentiality.pdf">Политика конфиденциальности</a></p>
           </div>
         </div>
       </section>
@@ -655,16 +654,18 @@
         на</span> <span>бесплатное</span> <br> <span>посещение салона</span> </div>
             <form class="mod__fields js_form"> <input type="hidden" name="DATA[TITLE]" value="Лендинг DeAria главная форма"> <input type="hidden" name="DATA[SOURCE_ID]" value="3"> <input class="form_id" type="hidden" name="DATA[SOURCE_DESCRIPTION]"> <label class="name_user">
           <span>Ваше имя</span>
-          <input class="js_input" name="DATA[NAME]" data-input="name_user"  type="text" required autocomplete="off">
+          <input required class="js_input" name="DATA[NAME]" data-input="name_user"  type="text" autocomplete="off">
         </label> <label class="tel_num">
           <span>Ваш номер телефона</span>
-          <input class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel" required autocomplete="off">
+          <input required class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel"
+           autocomplete="off">
         </label> <button class="form_button" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka8', 'event_action': 'Najatie8', });">Отправить</button> </form>
           </div>
           <div class="mod__image"> <img src="img/modal_girl.png" alt="girl"> </div>
           <div class="mod__closer js_close_mod">
             <div class="mod__closer--lines"></div>
           </div>
+          <p class="require"> введите свои даные, все поля обязательны для заполнения! </p>
         </div>
       </div>
       <div class="timeline mfp-hide zoom-anim-dialog">
@@ -697,14 +698,15 @@
               </div>
             </div>
           </div>
+          <p class="require"> введите свои даные, все поля обязательны для заполнения! </p>
         </div>
       </div>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="libs/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="js/app.js?ver=6"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzUP0XTLNn4vaYPc1dpKIWu3Im7HfTXnI&libraries=places&language=ru&region=RU&callback=initMap"></script>
+    <script type="text/javascript" src="js/app.js?ver=7"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzUP0XTLNn4vaYPc1dpKIWu3Im7HfTXnI&libraries=places&language=ru&region=RU&callback=initMap"></script>
     <!-- END scripts -->
     <!-- BEGIN remarketing -->
     <script type="text/javascript">
@@ -717,6 +719,8 @@
     </script>
     <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script> <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/833137339/?guid=ON&amp;script=0"/></div></noscript>
     <!-- END remarketing -->
+    <!-- START google failure analysis -->setTimeout(function(){gtag('event', location.pathname, {'event_category': 'Новый посетитель'});}, 50000);
+    <!-- END google failure analysis -->
   </body>
 
 </html>

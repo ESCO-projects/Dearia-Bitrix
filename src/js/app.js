@@ -240,6 +240,18 @@ $(document).ready(() => {
 
     setTimeout(() => { $('.preloader').fadeOut(300); }, 100);
 
+
+      $('.js_form').submit(function() {
+        $(this).find('input.js_input').each(function(){
+          if ( $(this).val().length <= 0) {
+            $('p.require').fadeIn(100);
+           } else if ( $(this).val().length >= 1) {
+            $('p.require').fadeOut(100);
+            console.log($(this).val().length);
+           }
+        });
+    });
+
     // Get IE or Edge browser version
     var version = detectIE();
 

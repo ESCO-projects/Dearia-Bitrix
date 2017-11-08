@@ -12,11 +12,12 @@
         <input class="form_id" type="hidden" name="DATA[SOURCE_DESCRIPTION]">
         <label class="name_user">
           <span>Ваше имя</span>
-          <input class="js_input" name="DATA[NAME]" data-input="name_user"  type="text" required autocomplete="off">
+          <input required class="js_input" name="DATA[NAME]" data-input="name_user"  type="text" autocomplete="off">
         </label>
         <label class="tel_num">
           <span>Ваш номер телефона</span>
-          <input class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel" required autocomplete="off">
+          <input required class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel"
+           autocomplete="off">
         </label>
         <button class="form_button" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka8', 'event_action': 'Najatie8', });">Отправить</button>
       </form>
@@ -27,5 +28,8 @@
     <div class="mod__closer js_close_mod">
       <div class="mod__closer--lines"></div>
     </div>
+      <p class="require">
+        введите свои даные, все поля обязательны для заполнения!
+      </p>
   </div>
 </div>
