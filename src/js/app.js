@@ -42,11 +42,13 @@ $(document).ready(() => {
     //normalScrollElements: '.timeline',
     fixedElements: '.js_move_to,.open_mob_menu,.ms_warning',
     afterRender() {
-      $('.js_timer').countdown('2017/11/11 00:00:00', (event) => {
+
+      $('.js_timer').countdown('2017/12/31 00:00:00', (event) => {
         $('.cou_hours').html(event.strftime('%D'));
         $('.cou_min').html(event.strftime('%H'));
         $('.cou_sec').html(event.strftime('%M'));
       });
+      
       function timerFunc() {
         $.magnificPopup.open({
           items: { src: '.timeline' },

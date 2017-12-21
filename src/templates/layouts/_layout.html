@@ -1,9 +1,5 @@
 {% import "../layouts/_mixins.html" as mixins %}
 <!doctype html>
-<!--[if lte IE 8]>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-<![endif]-->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -15,7 +11,7 @@
     <style>
       .wrapper,body,html{margin:0!important}.preloader{padding:30vh 45px;overflow:hidden;text-align:center;position:fixed;height:100vh;width:100%;z-index:9999999;background-color:#a64db6;background-image:linear-gradient(to right,#f1ca74,#a64db6)}.preload__logo img{display:block;margin:0 auto;max-width:500px}.preload__loader{margin-top:50px}.spinner{margin:100px auto 0;width:70px;text-align:center}.spinner>div{width:18px;height:18px;background-color:#fff;border-radius:100%;display:inline-block;-webkit-animation:sk-bouncedelay 1.4s infinite ease-in-out both;animation:sk-bouncedelay 1.4s infinite ease-in-out both}.spinner .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.spinner .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0)}40%{-webkit-transform:scale(1)}}@keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}
     </style>
-    <link rel="stylesheet" media="all" href="css/app.css?ver=7">
+    <link rel="stylesheet" media="all" href="css/app.css?ver=700">
     {% include "../layouts/_media-tags.html" %}
     <!-- Google anal. start -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107883793-1"></script>
@@ -107,7 +103,7 @@
   <!-- END content -->
   <!-- BEGIN scripts -->
   <script type="text/javascript" src="lib/scrolloverflow.min.js"></script>
-  <script type="text/javascript" src="js/app.js?ver=7"></script>
+  <script type="text/javascript" src="js/app.js?ver=201888"></script>
   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzUP0XTLNn4vaYPc1dpKIWu3Im7HfTXnI&libraries=places&language=ru&region=RU&callback=initMap"></script>
   <!-- END scripts -->
   <!-- BEGIN remarketing -->
@@ -121,8 +117,5 @@
   <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
   <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/833137339/?guid=ON&amp;script=0"/></div></noscript>
   <!-- END remarketing -->
-  <!-- START google failure analysis -->
-    setTimeout(function(){gtag('event', location.pathname, {'event_category': 'Новый посетитель'});}, 50000);
-  <!-- END google failure analysis -->
   </body>
 </html>
