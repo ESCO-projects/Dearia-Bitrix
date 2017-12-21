@@ -43,7 +43,7 @@ $(document).ready(() => {
     fixedElements: '.js_move_to,.open_mob_menu,.ms_warning',
     afterRender() {
 
-      $('.js_timer').countdown('2017/12/31 00:00:00', (event) => {
+      $('.js_timer').countdown('2017/12/24 00:00:00', (event) => {
         $('.cou_hours').html(event.strftime('%D'));
         $('.cou_min').html(event.strftime('%H'));
         $('.cou_sec').html(event.strftime('%M'));
@@ -191,7 +191,7 @@ $(document).ready(() => {
     $(`.${tab_id}`).removeClass('move_label');
   });
 
-    /* START FOR ACTION SEND */
+  /* START FORM ACTION SEND BITRIX */
   $('.js_form').submit(function() { // Change
     const th = $(this);
     $.ajax({
@@ -203,7 +203,25 @@ $(document).ready(() => {
     });
     return false;
   });
-  /* END FOR ACTION SEND */
+  /* END FORM ACTION SEND BITRIX */
+
+  /* START FORM ACTION SEND EMAIL */
+  $(".js_form_email").submit(function() { //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+      window.location.replace('http://dearia.co.il/thanks.html');
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
+  /* END FORM ACTION SEND EMAIL */
 
   /* SET MASK TO INPUT */
   $('.js_tel_mask').mask('000-0000000');
